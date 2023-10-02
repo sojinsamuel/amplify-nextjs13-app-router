@@ -12,18 +12,18 @@ export default function Home() {
   const onSubmitHandler = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    // const res = await fetch('/api/post', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({ name }),
-    // })
+    const res = await fetch('/api/post', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name }),
+    })
 
-    // const data = await res.json()
-    // setPostedData(data.body)
+    const data = await res.json()
+    setPostedData(data.body)
 
-    setPostedData(`作った値：${name}`)
+    // setPostedData(`作った値：${name}`)
   }
 
   return (
@@ -51,9 +51,7 @@ export default function Home() {
           送信
         </button>
       </form>
-      <p className="text-lg font-medium mt-4">
-        APIから受け取った値: {postedData}
-      </p>
+      <p className="text-lg font-medium mt-4">{postedData}</p>
     </main>
   )
 }
