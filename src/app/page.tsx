@@ -1,7 +1,13 @@
 'use client'
+import { Button } from '@aws-amplify/ui-react'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
+import * as React from 'react'
+import '@aws-amplify/ui-react/styles.css'
 
 export default function Home() {
+  const router = useRouter()
+
   const [name, setName] = useState('')
   const [postedData, setPostedData] = useState('')
 
@@ -50,6 +56,10 @@ export default function Home() {
         </button>
       </form>
       <p className="text-lg font-medium mt-4">{postedData}</p>
+      <div className="border border-orange-500 w-1/3"></div>
+      <Button colorTheme="info" onClick={() => router.push(`/signup`)}>
+        Sign In
+      </Button>
     </main>
   )
 }

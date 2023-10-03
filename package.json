@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "^5.3.1",
+    "aws-amplify": "^5.3.11",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
@@ -22,6 +24,7 @@
     "eslint": "latest",
     "eslint-config-next": "latest",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
     "postcss": "latest",
     "prettier": "^3.0.3",
     "tailwindcss": "latest",
