@@ -1,9 +1,8 @@
+import React from 'react'
+import Dashboard from '../../features/Dashboard/page'
+
 const DashboradPage = () => {
-  return (
-    <div>
-      <h1>Dashboard Page</h1>
-    </div>
-  )
+  return <Dashboard />
 }
 
 export default DashboradPage

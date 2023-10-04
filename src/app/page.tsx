@@ -31,7 +31,6 @@ export default function Home() {
   }
 
   return (
-    // </main>
     <main className="flex flex-col items-center">
       <h1 className="text-3xl font-bold mb-4">Next JS APIのテスト</h1>
       <form
@@ -57,7 +56,7 @@ export default function Home() {
       </form>
       <p className="text-lg font-medium mt-4">{postedData}</p>
       <div className="border border-orange-500 w-1/3"></div>
-      <Button colorTheme="info" onClick={() => router.push(`/signup`)}>
+      <Button colorTheme="info" onClick={() => router.push(`/signin`)}>
         Sign In
       </Button>
     </main>
