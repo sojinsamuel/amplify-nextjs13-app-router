@@ -16,7 +16,13 @@
         "amplifynextjs13approd5b2a3af": {}
       },
       "function": {
-        "amplifyNext13ApiHello": {}
+        "amplifyNext13ApiHello": {
+          "deploymentBucketName": "amplify-amplify4173893102764-staging-84022-deployment",
+          "s3Key": "amplify-builds/amplifyNext13ApiHello-4350496f387358705330-build.zip"
+        }
+      },
+      "api": {
+        "next13AppRouteApi01": {}
       }
     }
   }

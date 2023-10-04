@@ -49,5 +49,23 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
+  },
+  "parameters": {
+    "AMPLIFY_function_amplifyNext13ApiHello_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyNext13ApiHello"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyNext13ApiHello_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyNext13ApiHello"
+        }
+      ]
+    }
   }
 }

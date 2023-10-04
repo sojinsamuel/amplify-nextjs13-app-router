@@ -21,6 +21,7 @@ export type AmplifyDependentResourcesAttributes = {
     "amplifyNext13ApiHello": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
+      "LambdaExecutionRoleArn": "string",
       "Name": "string",
       "Region": "string"
     }
