@@ -18,7 +18,7 @@
       "function": {
         "amplifyNext13ApiHello": {
           "deploymentBucketName": "amplify-amplify4173893102764-staging-84022-deployment",
-          "s3Key": "amplify-builds/amplifyNext13ApiHello-4350496f387358705330-build.zip"
+          "s3Key": "amplify-builds/amplifyNext13ApiHello-384a4462455965377144-build.zip"
         }
       },
       "api": {
