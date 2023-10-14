@@ -18,6 +18,13 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "function": {
+    "amplifyNex13ApiBlog": {
+      "Arn": "string",
+      "LambdaExecutionRole": "string",
+      "LambdaExecutionRoleArn": "string",
+      "Name": "string",
+      "Region": "string"
+    },
     "amplifyNext13ApiHello": {
       "Arn": "string",
       "LambdaExecutionRole": "string",

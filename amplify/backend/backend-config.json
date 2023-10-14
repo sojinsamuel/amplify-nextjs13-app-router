@@ -9,6 +9,14 @@
           ],
           "category": "function",
           "resourceName": "amplifyNext13ApiHello"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "amplifyNex13ApiBlog"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -44,6 +52,11 @@
     }
   },
   "function": {
+    "amplifyNex13ApiBlog": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
     "amplifyNext13ApiHello": {
       "build": true,
       "providerPlugin": "awscloudformation",
@@ -51,6 +64,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_amplifyNex13ApiBlog_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyNex13ApiBlog"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyNex13ApiBlog_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyNex13ApiBlog"
+        }
+      ]
+    },
     "AMPLIFY_function_amplifyNext13ApiHello_deploymentBucketName": {
       "usedBy": [
         {

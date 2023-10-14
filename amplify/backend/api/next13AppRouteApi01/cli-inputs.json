@@ -7,6 +7,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/blog": {
+      "name": "/blog",
+      "lambdaFunction": "amplifyNex13ApiBlog",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

@@ -18,7 +18,11 @@
       "function": {
         "amplifyNext13ApiHello": {
           "deploymentBucketName": "amplify-amplify4173893102764-staging-84022-deployment",
-          "s3Key": "amplify-builds/amplifyNext13ApiHello-384a4462455965377144-build.zip"
+          "s3Key": "amplify-builds/amplifyNext13ApiHello-6c70466f4c6c74365661-build.zip"
+        },
+        "amplifyNex13ApiBlog": {
+          "deploymentBucketName": "amplify-amplify4173893102764-staging-84022-deployment",
+          "s3Key": "amplify-builds/amplifyNex13ApiBlog-585375705458462f3736-build.zip"
         }
       },
       "api": {

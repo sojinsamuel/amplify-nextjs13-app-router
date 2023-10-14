@@ -11,7 +11,7 @@ const Dashboard = () => {
   ])
 
   useEffect(() => {
-    if (authStatus !== 'authenticated') router.push(`/signin`)
+    if (authStatus !== 'authenticated') router.push(`/signin-amplify`)
   }, [authStatus, router])
 
   const handleSignOut = () => {

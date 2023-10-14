@@ -56,8 +56,11 @@ export default function Home() {
       </form>
       <p className="text-lg font-medium mt-4">{postedData}</p>
       <div className="border border-orange-500 w-1/3"></div>
-      <Button colorTheme="info" onClick={() => router.push(`/signin`)}>
-        Sign In
+      <Button colorTheme="info" onClick={() => router.push(`/signin-amplify`)}>
+        Sign In-amplify
+      </Button>
+      <Button colorTheme="success" onClick={() => router.push(`/signup`)}>
+        Sign Up
       </Button>
     </main>
   )
