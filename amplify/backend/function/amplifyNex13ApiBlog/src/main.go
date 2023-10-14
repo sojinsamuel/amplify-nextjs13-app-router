@@ -24,7 +24,7 @@ type Blog struct {
 }
 
 func selectBlogs() (blogs []Blog, err error) {
-	db, err := sql.Open("postgres", "postgresql://postgres:kSjgrqHtLAOWWIvL@db.bdwqrsfpdgdzitdiicet.supabase.co:5432/postgres")
+	db, err := sql.Open("postgres", "postgresql://")
 	if err != nil {
 		log.Fatalln(err)
 	}
