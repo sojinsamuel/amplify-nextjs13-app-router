@@ -22,10 +22,9 @@
         },
         "amplifyNex13ApiBlog": {
           "deploymentBucketName": "amplify-amplify4173893102764-staging-84022-deployment",
-          "s3Key": "amplify-builds/amplifyNex13ApiBlog-43635945784b3474476f-build.zip",
-          "dbHost": "db.bdwqrsfpdgdzitdiicet.supabase.co:5432/postgres",
-          "dbUser": "postgres",
-          "dbPasswd": "kSjgrqHtLAOWWIvL"
+          "s3Key": "amplify-builds/amplifyNex13ApiBlog-382b3436432f6f747470-build.zip",
+          "secretsPathAmplifyAppId": "d3jwgreaqm439x",
+          "dbHost": "db.bdwqrsfpdgdzitdiicet.supabase.co:5432/postgres"
         }
       },
       "api": {

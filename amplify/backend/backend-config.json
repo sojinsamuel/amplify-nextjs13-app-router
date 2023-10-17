@@ -72,22 +72,6 @@
         }
       ]
     },
-    "AMPLIFY_function_amplifyNex13ApiBlog_dbPasswd": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifyNex13ApiBlog"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplifyNex13ApiBlog_dbUser": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifyNex13ApiBlog"
-        }
-      ]
-    },
     "AMPLIFY_function_amplifyNex13ApiBlog_deploymentBucketName": {
       "usedBy": [
         {
@@ -97,6 +81,14 @@
       ]
     },
     "AMPLIFY_function_amplifyNex13ApiBlog_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyNex13ApiBlog"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyNex13ApiBlog_secretsPathAmplifyAppId": {
       "usedBy": [
         {
           "category": "function",
