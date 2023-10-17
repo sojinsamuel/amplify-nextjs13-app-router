@@ -22,7 +22,10 @@
         },
         "amplifyNex13ApiBlog": {
           "deploymentBucketName": "amplify-amplify4173893102764-staging-84022-deployment",
-          "s3Key": "amplify-builds/amplifyNex13ApiBlog-585375705458462f3736-build.zip"
+          "s3Key": "amplify-builds/amplifyNex13ApiBlog-43635945784b3474476f-build.zip",
+          "dbHost": "db.bdwqrsfpdgdzitdiicet.supabase.co:5432/postgres",
+          "dbUser": "postgres",
+          "dbPasswd": "kSjgrqHtLAOWWIvL"
         }
       },
       "api": {

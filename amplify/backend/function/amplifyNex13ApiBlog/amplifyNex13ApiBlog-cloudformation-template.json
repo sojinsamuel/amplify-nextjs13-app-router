@@ -15,6 +15,15 @@
     },
     "s3Key": {
       "Type": "String"
+    },
+    "dbHost": {
+      "Type": "String"
+    },
+    "dbUser": {
+      "Type": "String"
+    },
+    "dbPasswd": {
+      "Type": "String"
     }
   },
   "Conditions": {
@@ -69,6 +78,15 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
+            },
+            "DB_HOST": {
+              "Ref": "dbHost"
+            },
+            "DB_USER": {
+              "Ref": "dbUser"
+            },
+            "DB_PASSWD": {
+              "Ref": "dbPasswd"
             }
           }
         },

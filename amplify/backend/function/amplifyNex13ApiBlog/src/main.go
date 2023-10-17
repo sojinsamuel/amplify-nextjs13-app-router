@@ -6,9 +6,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"os"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
 )
 
@@ -24,7 +26,17 @@ type Blog struct {
 }
 
 func selectBlogs() (blogs []Blog, err error) {
-	db, err := sql.Open("postgres", "postgresql://")
+	// .envファイルが存在する場合にのみロード
+	_ = godotenv.Load() // エラーを無視
+
+	dbHost := os.Getenv("DB_HOST")
+	dbUser := os.Getenv("DB_USER")
+	dbPasswd := os.Getenv("DB_PASSWD")
+
+	dbSource := fmt.Sprintf("postgresql://%s:%s@%s", dbUser, dbPasswd, dbHost)
+	// log.Println(dbSource)
+
+	db, err := sql.Open("postgres", dbSource)
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -67,7 +79,7 @@ func HandleRequest(ctx context.Context) (events.APIGatewayProxyResponse, error) 
 	if err != nil {
 		return events.APIGatewayProxyResponse{StatusCode: 404}, err
 	}
-	fmt.Println(jsonData)
+	// fmt.Println(jsonData)
 	// json.HTMLEscape(&buf, body)
 
 	// resp := events.APIGatewayProxyResponse{
